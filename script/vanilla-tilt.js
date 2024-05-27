@@ -420,14 +420,14 @@ class VanillaTilt {
    */
   extendSettings(settings) {
     let defaultSettings = {
-      reverse: false,
-      max: 15,
+      reverse: true,
+      max: 7,
       startX: 0,
       startY: 0,
       perspective: 1000,
       easing: "cubic-bezier(.03,.98,.52,.99)",
       scale: 1,
-      speed: 300,
+      speed: 500,
       transition: true,
       axis: null,
       glare: false,

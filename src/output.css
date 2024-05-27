@@ -818,10 +818,6 @@ video {
   display: none;
 }
 
-.h-40 {
-  height: 10rem;
-}
-
 .w-\[this-is\\\\\] {
   width: this-is\\;
 }
@@ -834,8 +830,9 @@ video {
   width: weird-and-invalid;
 }
 
-.w-40 {
-  width: 10rem;
+.w-max {
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .flex-shrink {
@@ -876,6 +873,11 @@ video {
 
 .border-separate {
   border-collapse: separate;
+}
+
+.translate-x-4 {
+  --tw-translate-x: 1rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .\!transform {
@@ -1172,6 +1174,10 @@ video {
   grid-auto-flow: column dense;
 }
 
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -1354,6 +1360,10 @@ video {
 
 .justify-items-stretch {
   justify-items: stretch;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1672,6 +1682,10 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -1801,14 +1815,22 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-red-50 {
+.bg-blue-950 {
   --tw-bg-opacity: 1;
-  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
+  background-color: rgb(23 37 84 / var(--tw-bg-opacity));
 }
 
-.bg-red-500 {
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[\#\] {
+  background-color: #;
+}
+
+.bg-\[\#212534\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+  background-color: rgb(33 37 52 / var(--tw-bg-opacity));
 }
 
 .decoration-slice {
@@ -1921,6 +1943,10 @@ video {
      object-fit: scale-down;
 }
 
+.pt-\[20px\] {
+  padding-top: 20px;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1975,6 +2001,14 @@ video {
 
 .align-super {
   vertical-align: super;
+}
+
+.text-\[13px\] {
+  font-size: 13px;
+}
+
+.text-\[15px\] {
+  font-size: 15px;
 }
 
 .font-bold {
@@ -2480,6 +2514,14 @@ video {
 
 .hover\:focus\:text-center:focus:hover {
   text-align: center;
+}
+
+.active\:w-\[900px\]:active {
+  width: 900px;
+}
+
+.active\:w-\[\]:active {
+  width: ;
 }
 
 @media (min-width: 640px) {
